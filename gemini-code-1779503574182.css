@@ -1,0 +1,31 @@
+/* The Grid Overlay */
+#custom-grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allows clicks to pass through to the page */
+  z-index: 999998; /* Ensures it stays on top of page content */
+  
+  /* Creates a 50x50 pixel grid */
+  background-size: 50px 50px;
+  background-image:
+    linear-gradient(to right, rgba(255, 0, 0, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 0, 0, 0.2) 1px, transparent 1px);
+}
+
+/* The Coordinate Tooltip */
+#custom-coord-tooltip {
+  position: fixed;
+  pointer-events: none;
+  z-index: 999999;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ff00;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  /* Offsets the tooltip slightly so it doesn't sit exactly under the cursor */
+  transform: translate(15px, 15px); 
+}

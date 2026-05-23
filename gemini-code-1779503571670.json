@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Grid & Coordinates Tracker",
+  "version": "1.0",
+  "description": "Displays a grid overlay and tracks mouse coordinates.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
